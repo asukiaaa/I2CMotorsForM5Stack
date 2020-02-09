@@ -1,0 +1,9 @@
+(module outer_corner (layer F.Cu) (tedit 5D40D49F)
+  (fp_text reference REF** (at -1.0414 -4.4831) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value outer_corner (at -1.4859 -3.1242) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_arc (start -3 3) (end 2 3) (angle -90) (layer Edge.Cuts) (width 0.15))
+)
