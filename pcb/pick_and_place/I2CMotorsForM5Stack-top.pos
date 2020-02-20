@@ -1,0 +1,13 @@
+### Module positions - created on Mon 10 Feb 2020 01:18:54 JST ###
+### Printed by Pcbnew version kicad 5.1.5-52549c5~84~ubuntu18.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                                   PosX       PosY       Rot  Side
+C1        0.1uf          C_0603_1608Metric                      29.3268    -6.7359   90.0000  top
+C2        0.1uf          C_0603_1608Metric                      18.2388   -25.3234    0.0000  top
+C3        10uf           C_0805_2012Metric                      14.6638   -25.6484  180.0000  top
+C4        0.1uf          C_0603_1608Metric                      15.5888     0.4516  180.0000  top
+R1        10k            R_0603_1608Metric                      19.0638     0.5016    0.0000  top
+U1        TB6612FNG      SSOP-24_5.3x8.2mm_P0.65mm              14.9268   -19.5234    0.0000  top
+U2        ATmega328P-MU  QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm    23.5018    -6.8484    0.0000  top
+## End

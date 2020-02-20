@@ -144,12 +144,12 @@ F 3 "~" H 9900 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U2
+L MCU_Microchip_ATmega:ATmega328P-MU U2
 U 1 1 5E3FF990
 P 6750 3100
 F 0 "U2" H 6750 1511 50  0000 C CNN
-F 1 "ATmega328P-AU" H 6750 1420 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6750 3100 50  0001 C CIN
+F 1 "ATmega328P-MU" H 6750 1420 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 6750 3100 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 6750 3100 50  0001 C CNN
 	1    6750 3100
 	1    0    0    -1  
