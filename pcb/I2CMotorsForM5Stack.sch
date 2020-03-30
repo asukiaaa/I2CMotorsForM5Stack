@@ -749,4 +749,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 4350 3450 4350
 Connection ~ 3850 4350
+Text Label 2800 3850 0    50   ~ 0
+VM
 $EndSCHEMATC
