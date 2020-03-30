@@ -130,18 +130,16 @@ F 3 "" H 9450 2900 50  0001 C CNN
 	1    9450 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 1800 10650 1800
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J1
 U 1 1 5CD7CD4A
-P 9900 2300
-F 0 "J1" H 9950 3217 50  0000 C CNN
-F 1 "free_holes" H 9950 3126 50  0000 C CNN
-F 2 "footprints:Pads_1x30_P1.27mm_Vertical" H 9900 2300 50  0001 C CNN
-F 3 "~" H 9900 2300 50  0001 C CNN
-	1    9900 2300
-	1    0    0    -1  
+P 10000 2300
+F 0 "J1" H 10050 3217 50  0000 C CNN
+F 1 "FFC_connector" H 10050 3126 50  0000 C CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-30S-0.5SH_1x30-1MP_P0.50mm_Horizontal" H 10000 2300 50  0001 C CNN
+F 3 "~" H 10000 2300 50  0001 C CNN
+	1    10000 2300
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0101
@@ -300,7 +298,7 @@ L Device:Jumper_NC_Small JP1
 U 1 1 5E41A7F4
 P 7950 3250
 F 0 "JP1" H 7950 3462 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7950 3371 50  0000 C CNN
+F 1 "NC" H 7950 3371 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7950 3250 50  0001 C CNN
 F 3 "~" H 7950 3250 50  0001 C CNN
 	1    7950 3250
@@ -311,7 +309,7 @@ L Device:Jumper_NO_Small JP2
 U 1 1 5E41CE9B
 P 8250 3250
 F 0 "JP2" H 8250 3435 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 8250 3344 50  0000 C CNN
+F 1 "NO" H 8250 3344 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8250 3250 50  0001 C CNN
 F 3 "~" H 8250 3250 50  0001 C CNN
 	1    8250 3250
@@ -454,30 +452,6 @@ Text Label 9100 3900 0    50   ~ 0
 MISO
 Text Label 9100 4100 0    50   ~ 0
 SCK
-Text Label 9100 3400 2    50   ~ 0
-SPI_RESET
-$Comp
-L Device:R R1
-U 1 1 5E44A165
-P 9250 3400
-F 0 "R1" V 9150 3400 50  0000 C CNN
-F 1 "10k" V 9250 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9180 3400 50  0001 C CNN
-F 3 "~" H 9250 3400 50  0001 C CNN
-	1    9250 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0116
-U 1 1 5E44B3D6
-P 9400 3400
-F 0 "#PWR0116" H 9400 3250 50  0001 C CNN
-F 1 "+3V3" H 9415 3573 50  0000 C CNN
-F 2 "" H 9400 3400 50  0001 C CNN
-F 3 "" H 9400 3400 50  0001 C CNN
-	1    9400 3400
-	1    0    0    -1  
-$EndComp
 Text Label 7350 4000 0    50   ~ 0
 AIN1
 Text Label 1900 5500 2    50   ~ 0
@@ -503,17 +477,6 @@ STBY
 Text Label 7350 2900 0    50   ~ 0
 ADDR2
 $Comp
-L Switch:SW_DIP_x08 SW1
-U 1 1 5E665E4B
-P 2300 2300
-F 0 "SW1" H 2300 2967 50  0000 C CNN
-F 1 "SW_DIP_x08" H 2300 2876 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx08_Piano_CTS_Series194-8MSTN_W7.62mm_P2.54mm" H 2300 2300 50  0001 C CNN
-F 3 "~" H 2300 2300 50  0001 C CNN
-	1    2300 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0117
 U 1 1 5E66647B
 P 2000 2750
@@ -524,29 +487,6 @@ F 3 "" H 2000 2750 50  0001 C CNN
 	1    2000 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 2750 2000 2600
-Connection ~ 2000 2000
-Wire Wire Line
-	2000 2000 2000 1900
-Connection ~ 2000 2100
-Wire Wire Line
-	2000 2100 2000 2000
-Connection ~ 2000 2200
-Wire Wire Line
-	2000 2200 2000 2100
-Connection ~ 2000 2300
-Wire Wire Line
-	2000 2300 2000 2200
-Connection ~ 2000 2400
-Wire Wire Line
-	2000 2400 2000 2300
-Connection ~ 2000 2500
-Wire Wire Line
-	2000 2500 2000 2400
-Connection ~ 2000 2600
-Wire Wire Line
-	2000 2600 2000 2500
 Text Label 7350 3000 0    50   ~ 0
 ADDR3
 Text Label 7350 3100 0    50   ~ 0
@@ -677,7 +617,7 @@ L Device:Jumper_NO_Small JP3
 U 1 1 5E6C124E
 P 5750 3600
 F 0 "JP3" H 5750 3785 50  0000 C CNN
-F 1 "NC" H 5750 3694 50  0000 C CNN
+F 1 "NO" H 5750 3694 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 3600 50  0001 C CNN
 F 3 "~" H 5750 3600 50  0001 C CNN
 	1    5750 3600
@@ -703,7 +643,7 @@ L Device:Jumper_NO_Small JP4
 U 1 1 5E6C43A4
 P 5750 3900
 F 0 "JP4" H 5750 4085 50  0000 C CNN
-F 1 "NC" H 5750 3994 50  0000 C CNN
+F 1 "NO" H 5750 3994 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 3900 50  0001 C CNN
 F 3 "~" H 5750 3900 50  0001 C CNN
 	1    5750 3900
@@ -751,4 +691,169 @@ Wire Wire Line
 Connection ~ 3850 4350
 Text Label 2800 3850 0    50   ~ 0
 VM
+Connection ~ 9700 2100
+Connection ~ 10200 1600
+Connection ~ 10200 2800
+Connection ~ 9700 2900
+Connection ~ 10200 2900
+Connection ~ 9700 3000
+Connection ~ 10200 3000
+Connection ~ 10200 1700
+Connection ~ 10200 1800
+Wire Wire Line
+	10350 1800 10650 1800
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J2
+U 1 1 5E839DF5
+P 9900 2300
+F 0 "J2" H 9950 3217 50  0000 C CNN
+F 1 "2x15socket" H 9950 3126 50  0000 C CNN
+F 2 "my-kicad-footprints:PinSocket_2x15_P2.54mm_Vertical_SMD_just_for_M5Stack_bottom" H 9900 2300 50  0001 C CNN
+F 3 "~" H 9900 2300 50  0001 C CNN
+	1    9900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small ADDR2
+U 1 1 5E84FB49
+P 2350 2000
+F 0 "ADDR2" H 2500 2050 50  0000 C CNN
+F 1 "NC" H 2250 2050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2350 2000 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small ADDR1
+U 1 1 5E8501F7
+P 2350 1900
+F 0 "ADDR1" H 2500 1950 50  0000 C CNN
+F 1 "NO" H 2250 1950 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 1900 50  0001 C CNN
+F 3 "~" H 2350 1900 50  0001 C CNN
+	1    2350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1900 2000 2000
+$Comp
+L Device:Jumper_NO_Small ADDR3
+U 1 1 5E855E5F
+P 2350 2100
+F 0 "ADDR3" H 2500 2150 50  0000 C CNN
+F 1 "NO" H 2250 2150 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2100 50  0001 C CNN
+F 3 "~" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small ADDR4
+U 1 1 5E855FAF
+P 2350 2200
+F 0 "ADDR4" H 2500 2250 50  0000 C CNN
+F 1 "NO" H 2250 2250 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2200 50  0001 C CNN
+F 3 "~" H 2350 2200 50  0001 C CNN
+	1    2350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small ADDR5
+U 1 1 5E8560B1
+P 2350 2300
+F 0 "ADDR5" H 2500 2350 50  0000 C CNN
+F 1 "NC" H 2250 2350 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2350 2300 50  0001 C CNN
+F 3 "~" H 2350 2300 50  0001 C CNN
+	1    2350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small ADDR6
+U 1 1 5E856295
+P 2350 2400
+F 0 "ADDR6" H 2500 2450 50  0000 C CNN
+F 1 "NO" H 2250 2450 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2400 50  0001 C CNN
+F 3 "~" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small ADDR7
+U 1 1 5E856411
+P 2350 2500
+F 0 "ADDR7" H 2500 2550 50  0000 C CNN
+F 1 "NC" H 2250 2550 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2350 2500 50  0001 C CNN
+F 3 "~" H 2350 2500 50  0001 C CNN
+	1    2350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small ADDR8
+U 1 1 5E8565AF
+P 2350 2600
+F 0 "ADDR8" H 2500 2650 50  0000 C CNN
+F 1 "NO" H 2250 2650 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2600 50  0001 C CNN
+F 3 "~" H 2350 2600 50  0001 C CNN
+	1    2350 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1900 2450 1900
+Wire Wire Line
+	2250 1900 2000 1900
+Wire Wire Line
+	2000 2000 2250 2000
+Connection ~ 2000 2000
+Wire Wire Line
+	2000 2000 2000 2100
+Wire Wire Line
+	2450 2000 2600 2000
+Wire Wire Line
+	2600 2100 2450 2100
+Wire Wire Line
+	2250 2100 2000 2100
+Connection ~ 2000 2100
+Wire Wire Line
+	2000 2100 2000 2200
+Wire Wire Line
+	2000 2200 2250 2200
+Connection ~ 2000 2200
+Wire Wire Line
+	2000 2200 2000 2300
+Wire Wire Line
+	2450 2200 2600 2200
+Wire Wire Line
+	2600 2300 2450 2300
+Wire Wire Line
+	2250 2300 2000 2300
+Connection ~ 2000 2300
+Wire Wire Line
+	2000 2300 2000 2400
+Wire Wire Line
+	2000 2400 2250 2400
+Connection ~ 2000 2400
+Wire Wire Line
+	2000 2400 2000 2500
+Wire Wire Line
+	2450 2400 2600 2400
+Wire Wire Line
+	2600 2500 2450 2500
+Wire Wire Line
+	2250 2500 2000 2500
+Connection ~ 2000 2500
+Wire Wire Line
+	2000 2500 2000 2600
+Wire Wire Line
+	2000 2600 2250 2600
+Connection ~ 2000 2600
+Wire Wire Line
+	2000 2600 2000 2750
+Wire Wire Line
+	2450 2600 2600 2600
 $EndSCHEMATC

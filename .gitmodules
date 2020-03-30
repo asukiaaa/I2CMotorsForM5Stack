@@ -1,0 +1,3 @@
+[submodule "pcb/my-kicad-footprints.pretty"]
+	path = pcb/my-kicad-footprints.pretty
+	url = git@github.com:asukiaaa/my-kicad-footprints.git
