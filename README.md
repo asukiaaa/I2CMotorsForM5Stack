@@ -2,6 +2,13 @@
 
 A motor driver with using atmega328p for M5Stack.
 
+# Components
+
+- [TB6612FNG](http://akizukidenshi.com/catalog/g/gI-11317/)
+- [Diode](http://akizukidenshi.com/catalog/g/gI-06014/)
+- Terminal mount 6p
+- Gear motor: tested with 6v30rpm
+
 # License
 
 MIT
