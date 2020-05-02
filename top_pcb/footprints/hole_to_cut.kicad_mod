@@ -1,0 +1,12 @@
+(module hole_to_cut (layer F.Cu) (tedit 5CD7D86E)
+  (fp_text reference REF** (at 0.381 2.1209) (layer Edge.Cuts) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value hole_to_cut (at 0.2794 -2.0447) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -11 1) (end 11 1) (layer Edge.Cuts) (width 0.15))
+  (fp_line (start 11 1) (end 11 -1) (layer Edge.Cuts) (width 0.15))
+  (fp_line (start 11 -1) (end -11 -1) (layer Edge.Cuts) (width 0.15))
+  (fp_line (start -11 -1) (end -11 1) (layer Edge.Cuts) (width 0.15))
+)
