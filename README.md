@@ -1,4 +1,4 @@
-# I2CMotorsForM5Stack
+# I2cMotorsForM5Stack
 
 A motor driver with using atmega328p for M5Stack.
 

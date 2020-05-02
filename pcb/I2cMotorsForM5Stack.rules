@@ -1,5 +1,5 @@
 
-(rules PCB I2CMotorsForM5Stack
+(rules PCB I2cMotorsForM5Stack
   (snap_angle 
     fortyfive_degree
   )
