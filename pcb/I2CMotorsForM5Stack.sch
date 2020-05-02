@@ -475,7 +475,7 @@ NoConn ~ 7350 2600
 Text Label 7350 1900 0    50   ~ 0
 STBY
 Text Label 7350 2900 0    50   ~ 0
-ADDR2
+ADDR1
 $Comp
 L power:GND #PWR0117
 U 1 1 5E66647B
@@ -488,35 +488,35 @@ F 3 "" H 2000 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7350 3000 0    50   ~ 0
-ADDR3
-Text Label 7350 3100 0    50   ~ 0
-ADDR4
-Text Label 7350 3600 0    50   ~ 0
-ADDR5
-Text Label 7350 3700 0    50   ~ 0
-ADDR6
-Text Label 7350 3800 0    50   ~ 0
-ADDR7
-Text Label 7350 3900 0    50   ~ 0
-ADDR8
-Text Label 7350 2800 0    50   ~ 0
-ADDR1
-Text Label 2600 1900 0    50   ~ 0
-ADDR1
-Text Label 2600 2000 0    50   ~ 0
 ADDR2
-Text Label 2600 2100 0    50   ~ 0
+Text Label 7350 3100 0    50   ~ 0
 ADDR3
-Text Label 2600 2200 0    50   ~ 0
+Text Label 7350 3600 0    50   ~ 0
 ADDR4
-Text Label 2600 2300 0    50   ~ 0
+Text Label 7350 3700 0    50   ~ 0
 ADDR5
-Text Label 2600 2400 0    50   ~ 0
+Text Label 7350 3800 0    50   ~ 0
 ADDR6
-Text Label 2600 2500 0    50   ~ 0
+Text Label 7350 3900 0    50   ~ 0
 ADDR7
+Text Label 7350 2800 0    50   ~ 0
+ADDR0
+Text Label 2600 1900 0    50   ~ 0
+ADDR0
+Text Label 2600 2000 0    50   ~ 0
+ADDR1
+Text Label 2600 2100 0    50   ~ 0
+ADDR2
+Text Label 2600 2200 0    50   ~ 0
+ADDR3
+Text Label 2600 2300 0    50   ~ 0
+ADDR4
+Text Label 2600 2400 0    50   ~ 0
+ADDR5
+Text Label 2600 2500 0    50   ~ 0
+ADDR6
 Text Label 2600 2600 0    50   ~ 0
-ADDR8
+ADDR7
 $Comp
 L power:+BATT #PWR0107
 U 1 1 5E4105E9
@@ -714,10 +714,10 @@ F 3 "~" H 9900 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small ADDR2
+L Device:Jumper_NC_Small ADDR1
 U 1 1 5E84FB49
 P 2350 2000
-F 0 "ADDR2" H 2500 2050 50  0000 C CNN
+F 0 "ADDR1" H 2500 2050 50  0000 C CNN
 F 1 "NC" H 2250 2050 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2350 2000 50  0001 C CNN
 F 3 "~" H 2350 2000 50  0001 C CNN
@@ -725,10 +725,10 @@ F 3 "~" H 2350 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR1
+L Device:Jumper_NO_Small ADDR0
 U 1 1 5E8501F7
 P 2350 1900
-F 0 "ADDR1" H 2500 1950 50  0000 C CNN
+F 0 "ADDR0" H 2500 1950 50  0000 C CNN
 F 1 "NO" H 2250 1950 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 1900 50  0001 C CNN
 F 3 "~" H 2350 1900 50  0001 C CNN
@@ -738,10 +738,10 @@ $EndComp
 Wire Wire Line
 	2000 1900 2000 2000
 $Comp
-L Device:Jumper_NO_Small ADDR3
+L Device:Jumper_NO_Small ADDR2
 U 1 1 5E855E5F
 P 2350 2100
-F 0 "ADDR3" H 2500 2150 50  0000 C CNN
+F 0 "ADDR2" H 2500 2150 50  0000 C CNN
 F 1 "NO" H 2250 2150 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2100 50  0001 C CNN
 F 3 "~" H 2350 2100 50  0001 C CNN
@@ -749,10 +749,10 @@ F 3 "~" H 2350 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR4
+L Device:Jumper_NO_Small ADDR3
 U 1 1 5E855FAF
 P 2350 2200
-F 0 "ADDR4" H 2500 2250 50  0000 C CNN
+F 0 "ADDR3" H 2500 2250 50  0000 C CNN
 F 1 "NO" H 2250 2250 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2200 50  0001 C CNN
 F 3 "~" H 2350 2200 50  0001 C CNN
@@ -760,10 +760,10 @@ F 3 "~" H 2350 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small ADDR5
+L Device:Jumper_NC_Small ADDR4
 U 1 1 5E8560B1
 P 2350 2300
-F 0 "ADDR5" H 2500 2350 50  0000 C CNN
+F 0 "ADDR4" H 2500 2350 50  0000 C CNN
 F 1 "NC" H 2250 2350 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2350 2300 50  0001 C CNN
 F 3 "~" H 2350 2300 50  0001 C CNN
@@ -771,10 +771,10 @@ F 3 "~" H 2350 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR6
+L Device:Jumper_NO_Small ADDR5
 U 1 1 5E856295
 P 2350 2400
-F 0 "ADDR6" H 2500 2450 50  0000 C CNN
+F 0 "ADDR5" H 2500 2450 50  0000 C CNN
 F 1 "NO" H 2250 2450 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2400 50  0001 C CNN
 F 3 "~" H 2350 2400 50  0001 C CNN
@@ -782,10 +782,10 @@ F 3 "~" H 2350 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small ADDR7
+L Device:Jumper_NC_Small ADDR6
 U 1 1 5E856411
 P 2350 2500
-F 0 "ADDR7" H 2500 2550 50  0000 C CNN
+F 0 "ADDR6" H 2500 2550 50  0000 C CNN
 F 1 "NC" H 2250 2550 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2350 2500 50  0001 C CNN
 F 3 "~" H 2350 2500 50  0001 C CNN
@@ -793,10 +793,10 @@ F 3 "~" H 2350 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR8
+L Device:Jumper_NO_Small ADDR7
 U 1 1 5E8565AF
 P 2350 2600
-F 0 "ADDR8" H 2500 2650 50  0000 C CNN
+F 0 "ADDR7" H 2500 2650 50  0000 C CNN
 F 1 "NO" H 2250 2650 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2350 2600 50  0001 C CNN
 F 3 "~" H 2350 2600 50  0001 C CNN
