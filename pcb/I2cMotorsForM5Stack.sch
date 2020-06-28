@@ -638,34 +638,6 @@ Wire Wire Line
 	5450 3600 5650 3600
 Wire Wire Line
 	5850 3600 6150 3600
-$Comp
-L Device:Jumper_NO_Small JP4
-U 1 1 5E6C43A4
-P 5750 3900
-F 0 "JP4" H 5750 4085 50  0000 C CNN
-F 1 "NO" H 5750 3994 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 3900 50  0001 C CNN
-F 3 "~" H 5750 3900 50  0001 C CNN
-	1    5750 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 3900 5850 3700
-Wire Wire Line
-	5850 3700 6150 3700
-$Comp
-L power:+3V3 #PWR0122
-U 1 1 5E6C62E7
-P 5200 3900
-F 0 "#PWR0122" H 5200 3750 50  0001 C CNN
-F 1 "+3V3" H 5215 4073 50  0000 C CNN
-F 2 "" H 5200 3900 50  0001 C CNN
-F 3 "" H 5200 3900 50  0001 C CNN
-	1    5200 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 3900 5650 3900
 Wire Wire Line
 	2800 3250 2800 3650
 $Comp
@@ -906,4 +878,7 @@ F 3 "" H 5200 5300 50  0001 C CNN
 	1    5200 5300
 	1    0    0    -1  
 $EndComp
+NoConn ~ 6150 3900
+NoConn ~ 6150 3800
+NoConn ~ 6150 3700
 $EndSCHEMATC
