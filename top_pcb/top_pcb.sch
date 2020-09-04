@@ -103,22 +103,6 @@ Text GLabel 8400 3000 2    39   Input ~ 0
 G12
 Text GLabel 8400 3100 2    39   Input ~ 0
 G15
-Text GLabel 8500 3400 2    39   Input ~ 0
-HPWR
-Wire Wire Line
-	8400 3400 8450 3400
-Wire Wire Line
-	8450 3400 8450 3300
-Wire Wire Line
-	8450 3200 8400 3200
-Connection ~ 8450 3400
-Wire Wire Line
-	8450 3400 8500 3400
-Wire Wire Line
-	8400 3300 8450 3300
-Connection ~ 8450 3300
-Wire Wire Line
-	8450 3300 8450 3200
 $Comp
 L power:GND #PWR0109
 U 1 1 5B24FCF9
@@ -155,15 +139,12 @@ F 3 "" H 7500 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 2500 7500 2500
-Connection ~ 8400 3400
 Connection ~ 7900 3400
 Connection ~ 7900 2500
 Connection ~ 8400 2200
 Connection ~ 8400 2100
 Connection ~ 8400 2000
-Connection ~ 8400 3300
 Connection ~ 7900 3300
-Connection ~ 8400 3200
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J3
 U 1 1 5CD7CD4A
@@ -209,8 +190,6 @@ F 3 "~" H 5800 2100 50  0001 C CNN
 	1    5800 2100
 	-1   0    0    -1  
 $EndComp
-Text GLabel 6000 2100 2    39   Input ~ 0
-HPWR
 $Comp
 L power:GND #PWR0101
 U 1 1 5EAE14AD
@@ -248,4 +227,14 @@ Wire Wire Line
 	6250 2000 6000 2000
 Wire Wire Line
 	6000 2200 6450 2200
+NoConn ~ 6000 2100
+Text Label 8400 3200 0    50   ~ 0
+NC0
+Connection ~ 8400 3200
+Text Label 8400 3300 0    50   ~ 0
+NC1
+Connection ~ 8400 3300
+Text Label 8400 3400 0    50   ~ 0
+NC2
+Connection ~ 8400 3400
 $EndSCHEMATC

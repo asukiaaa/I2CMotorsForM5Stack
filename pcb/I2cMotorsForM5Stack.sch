@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	10200 3000 10250 3000
-Wire Wire Line
-	10250 3000 10250 2900
-Wire Wire Line
-	10250 2800 10200 2800
-Wire Wire Line
-	10200 2900 10250 2900
-Connection ~ 10250 2900
-Wire Wire Line
-	10250 2900 10250 2800
 $Comp
 L power:GND #PWR0109
 U 1 1 5B24FCF9
@@ -47,8 +36,6 @@ Wire Wire Line
 Connection ~ 10350 1700
 Wire Wire Line
 	10350 1700 10350 1800
-Text Label 10250 3000 0    50   ~ 0
-HPWR
 Text Label 10200 2700 0    50   ~ 0
 15
 Text Label 10200 2600 0    50   ~ 0
@@ -612,32 +599,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 6750 3100 
 	1    6750 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP3
-U 1 1 5E6C124E
-P 5750 3600
-F 0 "JP3" H 5750 3785 50  0000 C CNN
-F 1 "NO" H 5750 3694 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 3600 50  0001 C CNN
-F 3 "~" H 5750 3600 50  0001 C CNN
-	1    5750 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5E6C1999
-P 5450 3600
-F 0 "#PWR0121" H 5450 3350 50  0001 C CNN
-F 1 "GND" H 5455 3427 50  0000 C CNN
-F 2 "" H 5450 3600 50  0001 C CNN
-F 3 "" H 5450 3600 50  0001 C CNN
-	1    5450 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 3600 5650 3600
-Wire Wire Line
-	5850 3600 6150 3600
 Wire Wire Line
 	2800 3250 2800 3650
 $Comp
@@ -665,11 +626,8 @@ Text Label 2800 3850 0    50   ~ 0
 VM
 Connection ~ 9700 2100
 Connection ~ 10200 1600
-Connection ~ 10200 2800
 Connection ~ 9700 2900
-Connection ~ 10200 2900
 Connection ~ 9700 3000
-Connection ~ 10200 3000
 Connection ~ 10200 1700
 Connection ~ 10200 1800
 Wire Wire Line
@@ -850,23 +808,8 @@ F 3 "" H 5000 5600 50  0001 C CNN
 	1    5000 5600
 	1    0    0    -1  
 $EndComp
-Text Label 5000 5400 0    50   ~ 0
-HPWR
 Wire Wire Line
 	5200 5300 5000 5300
-$Comp
-L power:+3V3 #PWR0123
-U 1 1 5EAFA395
-P 5400 5500
-F 0 "#PWR0123" H 5400 5350 50  0001 C CNN
-F 1 "+3V3" H 5415 5673 50  0000 C CNN
-F 2 "" H 5400 5500 50  0001 C CNN
-F 3 "" H 5400 5500 50  0001 C CNN
-	1    5400 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 5500 5400 5500
 $Comp
 L power:+BATT #PWR0124
 U 1 1 5EAFD8AA
@@ -881,4 +824,25 @@ $EndComp
 NoConn ~ 6150 3900
 NoConn ~ 6150 3800
 NoConn ~ 6150 3700
+Text Label 10200 2800 0    50   ~ 0
+NC0
+Text Label 10200 2900 0    50   ~ 0
+NC1
+Text Label 10200 3000 0    50   ~ 0
+NC2
+NoConn ~ 6150 3600
+Wire Wire Line
+	5000 5500 5400 5500
+NoConn ~ 5000 5400
+$Comp
+L power:+3V3 #PWR0123
+U 1 1 5EAFA395
+P 5400 5500
+F 0 "#PWR0123" H 5400 5350 50  0001 C CNN
+F 1 "+3V3" H 5415 5673 50  0000 C CNN
+F 2 "" H 5400 5500 50  0001 C CNN
+F 3 "" H 5400 5500 50  0001 C CNN
+	1    5400 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
