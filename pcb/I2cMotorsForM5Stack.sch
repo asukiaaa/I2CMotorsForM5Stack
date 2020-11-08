@@ -192,7 +192,7 @@ Wire Wire Line
 Text Label 7850 3250 2    50   ~ 0
 RST
 $Comp
-L Driver_Motor:TB6612FNG U1
+L I2cMotorsForM5Stack-rescue:TB6612FNG-Driver_Motor U1
 U 1 1 5E409F59
 P 2500 5100
 F 0 "U1" H 2500 6281 50  0000 C CNN
@@ -281,7 +281,7 @@ F 3 "" H 2200 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP1
+L I2cMotorsForM5Stack-rescue:Jumper_NC_Small-Device JP1
 U 1 1 5E41A7F4
 P 7950 3250
 F 0 "JP1" H 7950 3462 50  0000 C CNN
@@ -292,7 +292,7 @@ F 3 "~" H 7950 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP2
+L I2cMotorsForM5Stack-rescue:Jumper_NO_Small-Device JP2
 U 1 1 5E41CE9B
 P 8250 3250
 F 0 "JP2" H 8250 3435 50  0000 C CNN
@@ -589,7 +589,7 @@ F 3 "~" H 3950 2150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega328PB-MU U2
+L I2cMotorsForM5Stack-rescue:ATmega328PB-MU-MCU_Microchip_ATmega U2
 U 1 1 5E68D65A
 P 6750 3100
 F 0 "U2" H 6900 1650 50  0000 C CNN
@@ -644,7 +644,7 @@ F 3 "~" H 9900 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small ADDR1
+L I2cMotorsForM5Stack-rescue:Jumper_NC_Small-Device ADDR1
 U 1 1 5E84FB49
 P 2350 2000
 F 0 "ADDR1" H 2500 2050 50  0000 C CNN
@@ -655,7 +655,7 @@ F 3 "~" H 2350 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR0
+L I2cMotorsForM5Stack-rescue:Jumper_NO_Small-Device ADDR0
 U 1 1 5E8501F7
 P 2350 1900
 F 0 "ADDR0" H 2500 1950 50  0000 C CNN
@@ -668,7 +668,7 @@ $EndComp
 Wire Wire Line
 	2000 1900 2000 2000
 $Comp
-L Device:Jumper_NO_Small ADDR2
+L I2cMotorsForM5Stack-rescue:Jumper_NO_Small-Device ADDR2
 U 1 1 5E855E5F
 P 2350 2100
 F 0 "ADDR2" H 2500 2150 50  0000 C CNN
@@ -679,7 +679,7 @@ F 3 "~" H 2350 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR3
+L I2cMotorsForM5Stack-rescue:Jumper_NO_Small-Device ADDR3
 U 1 1 5E855FAF
 P 2350 2200
 F 0 "ADDR3" H 2500 2250 50  0000 C CNN
@@ -690,7 +690,7 @@ F 3 "~" H 2350 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small ADDR4
+L I2cMotorsForM5Stack-rescue:Jumper_NC_Small-Device ADDR4
 U 1 1 5E8560B1
 P 2350 2300
 F 0 "ADDR4" H 2500 2350 50  0000 C CNN
@@ -701,7 +701,7 @@ F 3 "~" H 2350 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR5
+L I2cMotorsForM5Stack-rescue:Jumper_NO_Small-Device ADDR5
 U 1 1 5E856295
 P 2350 2400
 F 0 "ADDR5" H 2500 2450 50  0000 C CNN
@@ -712,7 +712,7 @@ F 3 "~" H 2350 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small ADDR6
+L I2cMotorsForM5Stack-rescue:Jumper_NC_Small-Device ADDR6
 U 1 1 5E856411
 P 2350 2500
 F 0 "ADDR6" H 2500 2550 50  0000 C CNN
@@ -723,7 +723,7 @@ F 3 "~" H 2350 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small ADDR7
+L I2cMotorsForM5Stack-rescue:Jumper_NO_Small-Device ADDR7
 U 1 1 5E8565AF
 P 2350 2600
 F 0 "ADDR7" H 2500 2650 50  0000 C CNN

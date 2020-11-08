@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name I2cMotorsForM5Stack-rescue)(type Legacy)(uri ${KIPRJMOD}/I2cMotorsForM5Stack-rescue.lib)(options "")(descr ""))
+)

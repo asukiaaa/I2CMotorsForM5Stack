@@ -2,6 +2,10 @@
 
 A motor driver with using atmega328p for M5Stack.
 
+# TODO
+
+- Replace D3 to small current and high voltage one
+
 # Components
 
 - [TB6612FNG](http://akizukidenshi.com/catalog/g/gI-11317/)
